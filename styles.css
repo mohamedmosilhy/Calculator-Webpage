@@ -1,3 +1,7 @@
+sup{
+    background-color: rgba(63, 62, 65, 0.8);
+}
+
 *{
     font-family: 'Raleway', sans-serif;
     background-color: rgb(37, 36, 36);
@@ -54,4 +58,5 @@ input{
     outline: none !important;
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
+    pointer-events: none;
 }

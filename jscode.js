@@ -29,40 +29,45 @@ grid_element.forEach(element => {
         });
         return;  
     }
-    element.addEventListener('click',function(){
-        switch (element) {
-            case plus:
-                input_string += "+";
-                break;
-            case mult:
-                input_string += "*"
-                break;
-            case div:
-                input_string += "/"
-                break;
-            case percent:
-                input_string += "%"
-                break;
-            case dot:
-                input_string += "."
-                break;
-            case minus:
-                input_string += "-"
-                break;
-            case open_bracket:
-                input_string += "("
-                break;  
-            case closed_bracket:
-                input_string += ")"
-                break;  
-            case root:
-                input_string += "**(1/2)"
-                break;
-            default:
-                input_string += element.textContent
-        }
-        input.value += element.textContent;
-    });
+    else if(element == root){
+        element.addEventListener('click',function(){
+            input.value += element.textContent.slice(1);
+            input_string += "**(1/2)"
+        });
+    }
+    else{
+        element.addEventListener('click',function(){
+            switch (element) {
+                case plus:
+                    input_string += "+";
+                    break;
+                case mult:
+                    input_string += "*"
+                    break;
+                case div:
+                    input_string += "/"
+                    break;
+                case percent:
+                    input_string += "%"
+                    break;
+                case dot:
+                    input_string += "."
+                    break;
+                case minus:
+                    input_string += "-"
+                    break;
+                case open_bracket:
+                    input_string += "("
+                    break;  
+                case closed_bracket:
+                    input_string += ")"
+                    break;  
+                default:
+                    input_string += element.textContent
+            }
+            input.value += element.textContent;
+        });
+    }
 });
 
 ac.addEventListener('click',()=>{

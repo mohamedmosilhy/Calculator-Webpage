@@ -1,62 +1,86 @@
-sup{
-    background-color: rgba(63, 62, 65, 0.8);
+sup {
+  background-color: rgba(63, 62, 65, 0.8);
 }
 
-*{
-    font-family: 'Raleway', sans-serif;
-    background-color: rgb(37, 36, 36);
-    color: #FEE715FF;
-    text-shadow: 4px 4px black;
-    text-align: center;
+* {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(37, 36, 36);
+  color: #fee715ff;
+  text-shadow: 4px 4px black;
+  text-align: center;
 }
 
-.grid{
-    display: grid;
-    border: 2px solid #FEE715FF;
-    border-radius: 16px;
-    width: 500px;
-    height: auto;
-    grid-template-columns: 62px 62px 62px 62px 62px 62px;
-    column-gap: 8px;
-    padding: 10px;
-    margin-top: 200px;
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  border: 2px solid #fee715ff;
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+  grid-template-columns: 62px 62px 62px 62px 62px 62px;
+  column-gap: 8px;
+  padding: 15px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
-.grid-element{
-    background-color: rgba(63, 62, 65, 0.8);
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 30px;
+.columns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.calculator{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.equal{
-    grid-column: 5 / span 2;
+.row,
+.second-row {
+  display: flex;
+  gap: 15px;
+  flex: 1;
 }
 
-.sign{
-    width: 65px;
+.grid-element {
+  background-color: rgba(63, 62, 65, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  width: 30px;
+  height: 35px;
+  font-size: 30px;
 }
 
-.AC{
-    margin-left: 37px;
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-input{
-    background-color: rgba(63, 62, 65, 0.8);
-    border: 1px solid black;
-    border-radius: 30px;
-    margin: 8px;
-    padding: 20px;
-    grid-column: 1 / 7;
-    outline: none !important;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE;
-    pointer-events: none;
+.sign {
+  flex: auto;
+}
+
+input {
+  background-color: rgba(63, 62, 65, 0.8);
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 8px;
+  padding: 12px;
+  grid-column: 1 / 7;
+  pointer-events: none;
+  font-size: 24px;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+  outline: none !important;
 }

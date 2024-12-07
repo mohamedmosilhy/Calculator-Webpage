@@ -1,52 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <script src="jscode.js" defer></script>
-</head>
-<body>
-    <div class = "header">
-        <h1>Calculator</h1>
-    </div>
-    
-    <div class="calculator">
-        
-        <div class="grid">
-            <input type="text">
-            <div class="grid-element number input">7</div>
-            <div class="grid-element number input">8</div>
-            <div class="grid-element number input">9</div>
-            <div class="grid-element division input"> &#247;</div>
-            <div class="grid-element sign DEL">DEL</div>
-            <div class="grid-element sign AC">AC</div>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="jscode.js" defer></script>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <div class="grid">
+                <input type="text">
+                <div class="columns">
+                    <div class="column">
+                        <div class="row">
+                            <div class="grid-element number input">7</div>
+                            <div class="grid-element number input">8</div>
+                            <div class="grid-element number input">9</div>
+                        </div>
+                        <div class="row">
+                            <div class="grid-element number input">4</div>
+                            <div class="grid-element number input">5</div>
+                            <div class="grid-element number input">6</div>
+
+                        </div>
+                        <div class="row">
+                            <div class="grid-element number input">1</div>
+                            <div class="grid-element number input">2</div>
+                            <div class="grid-element number input">3</div>
+                        </div>
+                        <div class="row">
+                            <div class="grid-element number input">0</div>
+                            <div class="grid-element dot input">.</div>
+                            <div class="grid-element equal">=</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <div class="second-row">
+                                <div class="grid-element sign DEL">DEL</div>
+                                <div class="grid-element sign AC">AC</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="grid-element multiplication input">x</div>
+                            <div class="grid-element division input"> &#247;</div>
+                            <div class="grid-element open-square-brackets input">(</div>
+                        </div>
+                        <div class="row">
+                            <div class="grid-element plus input">+</div>
+                            <div class="grid-element percent input">%</div>
+                            <div class="grid-element closed-square brackets input">)</div>
+                        </div>
+                        <div class="row">
+                            <div class="grid-element minus input">-</div>
+                            <div class="grid-element root input">x<sup>&#xbd;</sup></div>
+                            <div class="grid-element power input">x&#178;</div>
+
+                        </div>
+                    </div>
+                </div>
 
 
-            <div class="grid-element number input">4</div>
-            <div class="grid-element number input">5</div>
-            <div class="grid-element number input">6</div>
-            <div class="grid-element multiplication input">x</div>
-            <div class="grid-element open-square-brackets input">(</div>
-            <div class="grid-element closed-square brackets input">)</div>
-
-            <div class="grid-element number input">1</div>
-            <div class="grid-element number input">2</div>
-            <div class="grid-element number input">3</div>
-            <div class="grid-element plus input">+</div>
-            <div class="grid-element power input">x&#178;</div>
-            <div class="grid-element root input">x<sup>&#xbd;</sup></div>
-
-            <div class="grid-element number input">0</div>
-            <div class="grid-element dot input">.</div>
-            <div class="grid-element percent input">%</div>
-            <div class="grid-element minus input">-</div>
-            <div class="grid-element equal">=</div>
+            </div>
         </div>
-    </div>
-   
-</body>
+
+    </body>
+
 </html>
